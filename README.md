@@ -1,0 +1,2 @@
+# genshinguide
+genshin guide
