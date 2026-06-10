@@ -1,0 +1,26 @@
+# Genshin Impact Guide - Robots.txt
+# https://genshinguide.info/robots.txt
+
+User-agent: *
+Allow: /
+
+# Allow all search engines to crawl the site
+Allow: /builds/
+Allow: /abyss/
+Allow: /beginner/
+Allow: /news/
+
+# Disallow admin and private areas (if added later)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+# Sitemap location
+Sitemap: https://genshinguide.info/sitemap.xml
+
+# Crawl-delay for specific bots (optional)
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
