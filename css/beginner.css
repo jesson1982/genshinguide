@@ -1,0 +1,306 @@
+/* ============================================
+   Beginner Guide Page - Additional Styles
+   ============================================ */
+
+.beginner-hero {
+    background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+}
+
+.guide-article {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.guide-article h3 {
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+    font-size: 1.5rem;
+}
+
+.guide-article h4 {
+    margin: 1.5rem 0 1rem;
+    color: var(--primary-color);
+}
+
+.priority-list, .progression-list {
+    margin: 1rem 0;
+}
+
+.priority-list li, .progression-list li {
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.priority-list ul {
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+    list-style: disc;
+}
+
+.priority-list ul li {
+    margin-bottom: 0.5rem;
+}
+
+.progression-list {
+    list-style: decimal;
+    padding-left: 1.5rem;
+}
+
+.tip-box {
+    padding: 1.25rem;
+    border-radius: var(--radius-md);
+    margin: 1.5rem 0;
+}
+
+.tip-box.important {
+    background: #FFF5F5;
+    border-left: 4px solid #FC8181;
+}
+
+.tip-box.success {
+    background: #F0FFF4;
+    border-left: 4px solid #48BB78;
+}
+
+.tip-box.info {
+    background: #EBF8FF;
+    border-left: 4px solid #4299E1;
+}
+
+.tip-box h5 {
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+}
+
+.tip-box ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+.tip-box li {
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+}
+
+/* Element Reactions Grid */
+.reactions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.reaction-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    transition: all var(--transition-base);
+}
+
+.reaction-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+
+.reaction-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.reaction-card h3 {
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.reaction-type {
+    color: var(--primary-color);
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+.reaction-desc {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+}
+
+.reaction-tip {
+    font-size: 0.85rem;
+    color: var(--text-light);
+}
+
+/* Farming Guide */
+.farming-article {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.income-table-wrapper {
+    overflow-x: auto;
+    margin: 1.5rem 0;
+}
+
+.income-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.income-table thead {
+    background: var(--bg-accent);
+}
+
+.income-table th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.income-table td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-secondary);
+}
+
+.strategy-steps {
+    margin: 2rem 0;
+}
+
+.step {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.step-content h4 {
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.step-content p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Redeem Codes */
+.codes-article {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.codes-table-wrapper {
+    overflow-x: auto;
+    margin: 1.5rem 0;
+}
+
+.codes-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.codes-table thead {
+    background: var(--bg-accent);
+}
+
+.codes-table th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.codes-table td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.codes-table code {
+    background: var(--bg-accent);
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--radius-sm);
+    font-family: 'Courier New', monospace;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.note-cell {
+    color: var(--text-light);
+    font-style: italic;
+}
+
+.redeem-steps {
+    list-style: decimal;
+    padding-left: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.redeem-steps li {
+    margin-bottom: 0.75rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* FAQ Section */
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.faq-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.faq-item h3 {
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+    font-size: 1.1rem;
+}
+
+.faq-item p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .guide-article,
+    .farming-article,
+    .codes-article {
+        padding: 1.25rem;
+    }
+
+    .reactions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .step {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+}

@@ -1,0 +1,344 @@
+/* ============================================
+   Spiral Abyss Page - Additional Styles
+   ============================================ */
+
+.abyss-hero {
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+}
+
+.current-cycle-badge {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-md);
+    font-size: 0.9rem;
+}
+
+/* Floor Section */
+.floor-section {
+    margin-bottom: 3rem;
+}
+
+.difficulty-badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.difficulty-badge.hard {
+    background: #FED7D7;
+    color: #C53030;
+}
+
+.difficulty-badge.medium {
+    background: #FEFCBF;
+    color: #B7791F;
+}
+
+.difficulty-badge.easy {
+    background: #C6F6D5;
+    color: #276749;
+}
+
+/* Chamber Cards */
+.chamber-card {
+    background: white;
+    border-radius: var(--radius-lg);
+    margin-bottom: 1.5rem;
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+}
+
+.chamber-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chamber-header h3 {
+    font-size: 1.25rem;
+}
+
+.enemy-count {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.85rem;
+}
+
+.chamber-content {
+    padding: 1.5rem;
+}
+
+.enemy-lineup {
+    margin-bottom: 1.5rem;
+}
+
+.enemy-lineup h4 {
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+}
+
+.enemy-list {
+    list-style: none;
+}
+
+.enemy-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--bg-accent);
+}
+
+.element-tag {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: white;
+    margin-right: 0.5rem;
+}
+
+.element-tag.pyro { background: var(--pyro); }
+.element-tag.hydro { background: var(--hydro); }
+.element-tag.anemo { background: var(--anemo); }
+.element-tag.electro { background: var(--electro); }
+.element-tag.dendro { background: var(--dendro); }
+.element-tag.cryo { background: var(--cryo); }
+.element-tag.geo { background: var(--geo); }
+
+.strategy-box {
+    background: var(--bg-accent);
+    padding: 1.25rem;
+    border-radius: var(--radius-md);
+    margin-bottom: 1.5rem;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.strategy-box h4 {
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+}
+
+.strategy-box ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+.strategy-box li {
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+}
+
+.recommended-team {
+    margin-top: 1.5rem;
+}
+
+.recommended-team h4 {
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.team-slots {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.team-slot {
+    background: white;
+    padding: 1rem;
+    border-radius: var(--radius-md);
+    border: 2px solid var(--border-color);
+}
+
+.slot-role {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-light);
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+}
+
+.slot-suggestion {
+    display: block;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* Teams Grid */
+.teams-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.team-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    position: relative;
+    transition: all var(--transition-base);
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+}
+
+.team-badge {
+    position: absolute;
+    top: -10px;
+    right: 1rem;
+    background: var(--secondary-color);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.team-card h3 {
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.member {
+    text-align: center;
+}
+
+.member-avatar {
+    height: 60px;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+}
+
+.member-role {
+    font-size: 0.7rem;
+    color: var(--text-light);
+}
+
+.team-description {
+    margin-bottom: 1rem;
+}
+
+.team-description p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.team-stats {
+    display: flex;
+    gap: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.team-stats .stat {
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+/* Rewards Table */
+.rewards-table-wrapper {
+    overflow-x: auto;
+    margin: 1.5rem 0;
+}
+
+.rewards-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.rewards-table thead {
+    background: var(--primary-color);
+    color: white;
+}
+
+.rewards-table th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.rewards-table td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.rewards-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.highlight-row {
+    background: var(--bg-accent);
+}
+
+.rewards-note {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+/* Tips Grid */
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.tip-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.tip-card h3 {
+    margin-bottom: 0.75rem;
+    color: var(--primary-color);
+}
+
+.tip-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .team-slots {
+        grid-template-columns: 1fr;
+    }
+
+    .teams-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+}
